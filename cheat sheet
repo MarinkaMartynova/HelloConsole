@@ -1,27 +1,27 @@
-Console.WriteLine("2 Hello, World!");
+Console.WriteLine("2 Hello, World!");  //Встроеннный метод вывода сообщения с переводом на новую строку
 
 
-Console.Write("Введите ваше имя ");
-string username = Console.ReadLine();
-Console.Write("Привет,");
-Console.Write(username);
+Console.Write("Введите ваше имя ");     // Вывод сообщения без перехода на новую строку
+string username = Console.ReadLine();    // метод для ввода строки символов типа стринг. Дословно берем переменную userename и присваиваем ее символам строковый тип == текст
+Console.Write("Привет,");                //вывод сообщения
+Console.Write(username);                 //Вывод сообщения
 
 
-int numberA = new Random().Next(1, 10); // 1,2,3,4...9
-Console.WriteLine(numberA);
-int numberB = new Random().Next(1, 10);
-Console.WriteLine(numberB);
-int result = numberA + numberB;
-Console.WriteLine (result);
+int numberA = new Random().Next(1, 10); // 1,2,3,4...9 //берем целую переменную и присваиваем ей случайное значение в диапазоне от 1 до 10
+Console.WriteLine(numberA);                           // выводим сообщение
+int numberB = new Random().Next(1, 10);               //берем целую переменную и присваиваем ей случайное значение в диапазоне от 1 до 10
+Console.WriteLine(numberB);                           // выводим сообщение
+int result = numberA + numberB;                        //добавляем новую переменную, которой присваиваем значение суммы  наших переменных
+Console.WriteLine (result);                            //вывод сообщения == резулльтат сложения
 
 
-double numberA = 12;
-double numberB = 5;
-Console.WriteLine(numberA / numberB);
+double numberA = 12;                                  //берем переменную типа вещественный - присваиваем значение
+double numberB = 5;                                    //берем переменную типа вещественный - присваиваем значение
+Console.WriteLine(numberA / numberB);                  // выводим сообщение о частном этих чисел, без временного контейнера (переменной)
 
 
-Console.Write("Введите имя пользователя: ");
-string username = Console.ReadLine();
+Console.Write("Введите имя пользователя: ");           //ВЫводим сообщение
+string username = Console.ReadLine();                  // к сообщению добавляем нашу переменную == некий текст (имя)
 
 if(username.ToLower() == "маша")
 {
